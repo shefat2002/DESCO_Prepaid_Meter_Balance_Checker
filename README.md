@@ -1,4 +1,4 @@
-# DESCOBalanceChecker
+# DESCO Prepaid Meter Balance Checker
 
 A simple static web application for checking DESCO prepaid account balances.
 
