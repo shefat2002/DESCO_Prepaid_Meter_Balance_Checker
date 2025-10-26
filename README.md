@@ -6,6 +6,10 @@ A simple static web application for checking DESCO prepaid account balances.
 
 This project provides a minimal front-end interface to query DESCO's API for account balance information. It consists of three files: an HTML page for the UI, JavaScript for API interaction and logic, and CSS for styling. The app is designed to be deployed as a static site, such as on GitHub Pages.
 
+## Preview
+
+![Image Preview](assets/image-preview.png)
+![Image Balance](assets/image-balance.png)
 
 ## API Endpoint
 
