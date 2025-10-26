@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DESCO Balance Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="main">
+            <div class="container">
+                <div class="header">
+                    <div class="logo">⚡</div>
+                    <h1>DESCO Balance Checker</h1>
+                    <p class="subtitle">Check your prepaid meter balance</p>
+                </div>
+
+                <div class="error-message" id="errorMessage"></div>
+
+                <div class="input-group">
+                    <label for="accountNo">Account Number</label>
+                    <input type="text" id="accountNo" placeholder="Enter account number" value="15007361">
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-primary" id="checkBtn" onclick="checkBalance()">Check Balance</button>
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p style="margin-top: 15px; color: #666;">Fetching balance...</p>
+                </div>
+
+                <div class="result-card" id="resultCard">
+                    <div class="balance-label">Current Balance</div>
+                    <div class="balance-amount">৳ <span id="balance">0</span></div>
+
+                    <div class="detail-row">
+                        <span class="detail-label">Account No.</span>
+                        <span class="detail-value" id="accountDisplay">-</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Meter No.</span>
+                        <span class="detail-value" id="meterNo">-</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Current Month Usage</span>
+                        <span class="detail-value" id="consumption">-</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Last Reading</span>
+                        <span class="detail-value" id="readingTime">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            © <span id="year"></span> DESCO Balance Checker — Developed by<a href="https://github.com/shefat2002" target="_blank" rel="noopener noreferrer">Md Shefat Al Mahmud</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
